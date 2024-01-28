@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="public/Logo.svg">
+
+    <title>Encriptador
+    </title>
+</head>
+<body>
+    <main>
+        <section class="input-side">
+            <aside>
+                <img src="public/Logo.svg" alt="Logo">
+            </aside>
+            <form class="formulario">
+                <aside class="inter inputSection">
+                    <textarea class="inputTextarea" placeholder="Ingrese el texto aqui" ></textarea>
+                </aside>
+                <aside class="submitSection">
+                    <span>
+                        <img src="public/Group.svg" alt="submit">
+                        Solo letras minúsculas y sin acentos
+                    </span> 
+                    <div class="buttonsContainer">
+                        <button class="encriptarButton">Encriptar</button>
+                        <button  class="desencriptarButton" >Desencriptar</button>
+                    </div>
+                </aside>
+            </form>
+        </section>
+
+        <section class="output-side inter" >
+        <!-- A la espera -->
+            <div class="waitContainer" id="waitContainer">
+                <img src="public/wait.svg" alt="submit">
+                <span class="inter-bold">Ningún mensaje fue encontrado</span>
+                <span class="inter">Ingresa el texto que desees encriptar o desencriptar.</span>
+            </div>
+            <div class="hidden encryptContainer " id="encryptContainer">
+                <p id="outputP">EJEMLLPL DF DSF DSFD SF DSF DSFJSDFJDS FDSFDS FSD</p>
+                <button class="copyButton" id="copyButton">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

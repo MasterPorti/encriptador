@@ -1,0 +1,361 @@
+html {
+  background-color: #D8DFE8;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+.hidden {
+    display: none !important;
+}
+
+.encryptContainer {
+    max-width: 400px;
+    overflow-y: auto;
+    white-space: pre-line;
+    margin: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    color: #60666c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100% - 30px);
+}
+.copyButton{
+    color: #0a3871;
+    min-height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    background: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #0a3871;; 
+    transition: background-color 0.3s ease;
+}
+
+.copyButton:hover {
+    background-color: #e0e0e0;
+}
+
+
+
+.inter {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.inter-bold {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    width: 350px;
+    font-weight: 700;
+}
+
+
+
+.waitContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.waitContainer img{
+    width: 350px;
+}
+
+
+.waitContainer .inter{
+    margin-top: 10px;
+    color: #60666c;
+    font-size: 16px;
+    width: 350px;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+.submitSection span{
+    display: flex;
+    align-items: center;
+    gap: 5px;.desencriptarButton{
+    color: #0a3871;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #d8dfe8;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #0a3871;; 
+    transition: background-color 0.3s ease;
+}
+
+.desencriptarButton:hover {
+    background-color: #b2b7be;
+}
+
+    color: #495057;
+}
+
+.buttonsContainer{
+    display: flex;
+    gap: 24px;
+    margin-top: 10px;
+}
+
+.encriptarButton{
+    color: #fff;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #0a3871;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.encriptarButton {
+    color: #fff;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #0a3871;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.encriptarButton:hover {
+    background-color: #1b4375;
+}
+
+.desencriptarButton{
+    color: #0a3871;
+    height: 67px;
+    width: 328px;
+    border-radius: 24px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: #d8dfe8;
+    font: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #0a3871;; 
+    transition: background-color 0.3s ease;
+}
+
+.desencriptarButton:hover {
+    background-color: #b2b7be;
+}
+
+
+textarea{
+    font-size: 16px;
+    font-weight: 500;
+    color: #0a3871;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    height: 75vh;
+    padding: 0 20px;
+    font-size: 32px;
+    resize: none; 
+}
+
+form{
+    font-family: 'Inter', sans-serif;
+    margin-left: 130px;
+}
+
+.inputSection{
+    min-height: 75vh;
+}
+
+/* Resto de tu código CSS aquí */
+.input-side{
+    width: 100%;
+}
+
+main {    
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.output-side{
+    margin-left: 30px;
+    min-width: 400px;
+    height: calc(100vh - 60px);
+    border-radius: 32px;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 730px) {
+    .buttonsContainer{
+        flex-direction: column;
+    }
+    .buttonsContainer button{
+        width: 80vw;
+    }
+    .output-side{
+        margin-left: 0;
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    main {    
+        flex-direction: column;
+        justify-content: center;
+    }
+    form{
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .inputSection {
+        min-height: 60vh;
+    }
+    textarea {
+        height: 60vh;
+        width: calc(100vw - 60px);
+
+    }
+    .output-side {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        height: auto ;
+        margin-top: 15px;
+
+    }
+    .waitContainer img{
+        display: none;
+    }
+    .encryptContainer {
+        max-width: 100%;
+        overflow-y: auto;
+        margin: 15px;
+        font-family: 'Inter', sans-serif;
+        font-size: 24px;
+        color: #60666c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100% - 30px);
+    }
+    .encryptContainer p{
+        margin-bottom: 20px;
+    }
+    .copyButton{
+        width: 100%;
+    }
+  }
+
+
+/* Reset CSS */
+
+/* Box sizing rule */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Margin and padding rule */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* List rule */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Heading rule */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* Body rule */
+body {
+  line-height: 1;
+}
+
+/* Tables rule */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset anchor style */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set default cursor */
+button,
+input,
+select,
+textarea {
+  cursor: pointer;
+}
+
+/* Other elements */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add your own custom styles below this line */
